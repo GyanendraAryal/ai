@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "age": 28,
+    "department": "HR",
+    "salary": 55000,
+    "email": "alice@example.com",
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "age": 35,
+    "department": "Engineering",
+    "salary": 85000,
+    "email": "bob@example.com",
+    "isActive": true
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "age": 42,
+    "department": "Finance",
+    "salary": 72000,
+    "email": "charlie@example.com",
+    "isActive": false
+  },
+  {
+    "id": 4,
+    "name": "David Lee",
+    "age": 30,
+    "department": "Marketing",
+    "salary": 63000,
+    "email": "david@example.com",
+    "isActive": true
+  },
+  {
+    "id": 5,
+    "name": "Emma Davis",
+    "age": 27,
+    "department": "Sales",
+    "salary": 60000,
+    "email": "emma@example.com",
+    "isActive": true
+  }
+]
