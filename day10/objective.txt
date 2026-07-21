@@ -1,0 +1,17 @@
+daraz/ecommerce platform
+#Operations in pands:
+    -> filtering
+    -> sorting
+    -> cleaning
+
+
+#iloc:- integer location pandas method iloc[] where we can access data in any rows or column by using the id(i.e. integer)
+
+#loc:- name/label ko adhar ma same iloc le jastei filtering garna milne
+
+
+#Filtering
+print(dd.loc[dd["District"]=="Kathmandu"])
+
+
+print(dd[(dd["District"]=="Kathmandu") & (dd["PaymentMethod"]=="eSewa")])
