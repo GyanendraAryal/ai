@@ -1,0 +1,23 @@
+#Dirty Datas --> Detect
+
+1. Missing values = Dirty Data --> by isnull()
+2. Duplicate values = Dirty Data -->
+3. Wrong Datatypes = Dirty Data
+4. Inconsistant Values = Dirty Data
+5. Negative Values = Dirty Data
+6. Outliers = Outlier is a data point that differs significantly from the rest of the observations.
+
+
+
+#bd.isnull().sum() --> NaN, missing values dataypes catch and sum
+#bd.fillna(0) --> fills the missing fields of values or with null with 0
+    #but often time it does'nt make so sense so what we can do is take average of that column and fill the misssing with that mean(average) value
+#String to Numeric
+    dummy = pd.Series(['100','200','300','400'])
+    pd.to_numeric(dummy)
+
+    dummy = pd.Series(['100','def','300','abc'])
+    pd.to_numeric(dummy,errors="coerce")
+
+    d["age"]=pd.to_numeric(d["age"],errors ="coerce")
+    d["age"].fillna(d["age"].mean())
