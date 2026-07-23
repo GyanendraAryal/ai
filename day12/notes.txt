@@ -1,0 +1,18 @@
+#Duplication:-multiple same datasets
+#Types:-
+    1. Complete Duplication
+    2. Partial Duplication
+
+    #second occurance is duplicated
+
+d.duplicated(): - provides the number of duplicated items in out datasets
+d[d.duplicated()]:- returns the duplicate items in our datasets
+d.drop_duplicates(subject="product_id",inplace=True) #makes the product_id column unique and inplace=True changes the original datasets my removing the duplicated datasets
+d.drop_duplicates(subject="product_id",keep="last",inplace=True):- By default the first one is kept when duplicated so when we keep="last" it keeps the last one removes the first one/
+
+
+#Price
+d["price"]=pd.to_numeric(d["price"],errors="coerce")
+d["price"].fillna(d["price"].mean())
+d[d["price"]<0]
+--> converts string into numeric(null) and replaces the null with the average of the total price
